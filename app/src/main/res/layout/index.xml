@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/index_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="日记本"
+        android:textColor="#F0FFFF"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/line_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/index_title"
+        android:layout_marginTop="88dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="昵 称"
+            android:textColor="#FFFFF0"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:hint="李艺轩"
+            android:inputType="text"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/line_user"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/white"
+        android:onClick="onClick"
+        android:text="开 始" />
+
+
+</RelativeLayout>

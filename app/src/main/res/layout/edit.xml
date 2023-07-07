@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/s2">
+
+
+    <TextView
+        android:id="@+id/index_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="个人信息"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/line_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/index_title">
+        <TextView
+            android:id="@+id/username"
+            android:text="昵        称"
+            android:layout_marginLeft="5dp"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_setusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:inputType="text"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_password"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@id/line_user"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="爱        好"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:inputType="text"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_age"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@id/line_password"
+        android:layout_marginTop="9dp"
+        >
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="年        龄"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edt_setage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:inputType="number"
+            android:padding="5dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
